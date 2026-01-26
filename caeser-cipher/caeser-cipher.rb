@@ -4,12 +4,10 @@ def caeser_cipher(text)
 
   text.each_char do |char|
     if char >= "a" && char <= "z"
-      new_code = char.ord + shift
-      new_code += 26 if new_code < "a".ord
+      new_code = ((char.ord - 'a'.ord + shift) % 26) + 'a'.ord
       result << new_code.chr
     elsif char >= "A" && char <= "Z"
-      new_code = char.ord + shift
-      new_code += 26 if new_code < "A".ord
+      new_code = ((char.ord - 'A'.ord + shift) % 26) + 'A'.ord
       result << new_code.chr
     else
       result << char
