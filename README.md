@@ -1,0 +1,1 @@
+This folder will keep all my Ruby Projects that is being created during The Odin Project
