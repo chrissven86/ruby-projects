@@ -53,7 +53,7 @@ class Board
 
     # Symbol comparision in the winning combinations as per array definitions above
     winning_combos.any? do |combo|
-      [@cells[combo[0]], @cells[combo[1]], @cells[combo[2]]].uniq.lenght == 1 &&
+      [@cells[combo[0]], @cells[combo[1]], @cells[combo[2]]].uniq.length == 1 &&
         @cells[combo[0]] != ' '
     end
   end
