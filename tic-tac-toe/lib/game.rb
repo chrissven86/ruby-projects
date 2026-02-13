@@ -43,6 +43,7 @@ class Game
 
       position = get_player_move(current_player)
       @board.update(position, current_player.symbol)
+      @board.display_positions
       @board.diplay
 
       if @board.winning_combo?
